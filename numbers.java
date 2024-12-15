@@ -1,17 +1,29 @@
-// import java.util.Scanner;
+/*
+1 2 3 4 5 6 7
+2 3 4 5 6 7 1
+3 4 5 6 7 1 2
+4 5 6 7 1 2 3
+5 6 7 1 2 3 4
+6 7 1 2 3 4 5 
+7 1 2 3 4 5 6
+ */
 
-// public class numbers {
-//     public static void main(String[] args) {
-//         Scanner input = new Scanner(System.in);
-//         System.out.println("Enter the value of a: ");
-//         int a = input.nextInt();
-//         System.out.println("Enter the value of b");
-//         int b = input.nextInt();
+import java.util.Scanner;
 
-//         int ans = 1;
-//         for(int i =1 ; i <=b; i++){
-//             ans *=a;
-//         }
-//         System.out.println(ans);
-//     }
-// }
+public class numbers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int r =input.nextInt();
+
+        for(int i =1; i<=r; i++){
+            for(int j = i; j<=r; j++){
+                System.out.print(j);
+            }
+            for(int k = 1; k <=i-1;k++){
+                System.out.print(k);
+            }
+            System.out.println();
+        }
+    }
+}
